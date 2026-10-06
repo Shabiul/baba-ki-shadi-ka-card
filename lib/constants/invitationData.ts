@@ -73,13 +73,13 @@ export const invitationData = {
         {
           id: "milad",
           name: "MILAD",
-          time: "2:00 PM",
+          time: "4:00 PM",
           note: "Seeking divine blessings and prayers for the sacred union",
         },
         {
           id: "manjha",
           name: "MANJHA",
-          time: "4:00 PM",
+          time: "6:00 PM",
           note: "Traditional festivities and joyful celebration with family",
         },
       ],

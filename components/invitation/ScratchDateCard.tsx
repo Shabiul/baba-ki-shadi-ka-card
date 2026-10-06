@@ -13,7 +13,7 @@ export default function ScratchDateCard() {
 
   const [isMounted, setIsMounted] = useState(false);
 
-  // Live countdown to Dec 10, 2026 6:00 PM IST
+  // Live countdown to Dec 12, 2026 8:00 PM IST
   const [timeLeft, setTimeLeft] = useState<{ days: number; hours: number; minutes: number; seconds: number }>({
     days: 0,
     hours: 0,
@@ -23,7 +23,7 @@ export default function ScratchDateCard() {
 
   useEffect(() => {
     setIsMounted(true);
-    const target = new Date("2026-12-10T18:00:00+05:30").getTime();
+    const target = new Date("2026-12-12T20:00:00+05:30").getTime();
     const updateCountdown = () => {
       const now = new Date().getTime();
       const diff = Math.max(0, target - now);
@@ -171,10 +171,10 @@ export default function ScratchDateCard() {
 
   const handleCalendar = () => {
     const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
-      "Arshiya & Farhan Wedding Celebration"
-    )}&dates=20261210T123000Z/20261212T183000Z&details=${encodeURIComponent(
-      "Celebration of Arshiya & Farhan. Milad, Manjha, Barat and Walima."
-    )}&location=${encodeURIComponent("Kanpur, Uttar Pradesh")}`;
+      "Dawat-e-Walima: Mohammad Farhan Khan & Arshiya Anees"
+    )}&dates=20261212T143000Z/20261212T183000Z&details=${encodeURIComponent(
+      "Dawat-e-Walima of Mohammad Farhan Khan & Arshiya Anees. Hosted by Mr. & Mrs. Late Haji Mohammad Shahzade Khan."
+    )}&location=${encodeURIComponent("Shivam Palace, Keshavpuram, Kanpur")}`;
     window.open(calendarUrl, "_blank");
   };
 
@@ -205,7 +205,7 @@ export default function ScratchDateCard() {
               DAWAT-E-WALIMA &amp; CELEBRATIONS
             </span>
             <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-gold-gradient tracking-wide mb-1 drop-shadow-[0_2px_12px_rgba(223,186,115,0.4)]">
-              10 DECEMBER 2026
+              12 DECEMBER 2026
             </h3>
             <p className="font-cormorant text-sm italic text-[#faf2e4] mb-3">
               Shivam Palace • Keshavpuram, Kanpur
